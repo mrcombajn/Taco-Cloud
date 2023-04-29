@@ -24,7 +24,7 @@ public class Order {
     @NotBlank(message = "Podanie kodu pocztowego jest obowiązkowe.")
     private String zip;
 
-    @CreditCardNumber(message = "To nie jest number karty kredytowej.")
+    @CreditCardNumber(message = "To nie jest numer karty kredytowej.")
     private String ccNumber;
 
     @Pattern(regexp = "^(0[1-9]1[0-2])([\\/])([1-9][0-9])$", message = "Wartość musi być w formacie MM/RR.")
